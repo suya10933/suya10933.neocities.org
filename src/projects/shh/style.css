@@ -1,10 +1,10 @@
 :root {
-  --bg: #fffdf7;
-  --text: #171717;
-  --muted: #777;
-  --line: #ddd6c8;
-  --link: #171717;
-  --max-width: 42rem;
+  --bg: #ffffff;
+  --text: #111111;
+  --muted: #666666;
+  --line: #dddddd;
+  --link: #111111;
+  --max-width: 36rem;
 }
 
 * {
@@ -22,8 +22,9 @@ body {
     Monaco,
     Consolas,
     "Liberation Mono",
+    "Courier New",
     monospace;
-  line-height: 1.7;
+  line-height: 1.65;
 }
 
 .page {
@@ -43,14 +44,16 @@ body {
 }
 
 .content h1 {
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-weight: 500;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
 }
 
 .content h2 {
-  margin-top: 2rem;
-  font-size: 1.1rem;
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: lowercase;
 }
 
 .content p,
@@ -66,6 +69,7 @@ body {
 a {
   color: var(--link);
   text-decoration: underline;
+  text-decoration-thickness: 1px;
   text-underline-offset: 0.18em;
 }
 
