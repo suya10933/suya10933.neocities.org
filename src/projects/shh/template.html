@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>$if(title)$$title$ | $endif$tiny blog</title>
+  <meta name="description" content="$if(description)$$description$$else$tiny blog project log$endif$">
+  <link rel="stylesheet" href="/projects/shh/style.css">
+</head>
+
+<body>
+  <main class="page">
+    <header class="site-header">
+      <a href="/" class="home-link">home</a>
+    </header>
+
+    <article class="content">
+      $if(date)$
+        <p class="date">$date$</p>
+      $endif$
+
+      $body$
+    </article>
+
+  </main>
+</body>
+</html>
